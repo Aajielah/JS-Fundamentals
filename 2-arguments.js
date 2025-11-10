@@ -1,11 +1,10 @@
-let Myarguments = 2;
 
-if (Myarguments === 0) {
+const args = process.argv.slice(2);
+
+if (args.length === 0) {
   console.log("No argument");
-}
-else if (Myarguments === 1) {
+} else if (args.length === 1) {
   console.log("Argument found");
-}
-else if (Myarguments === 2) {
+} else {
   console.log("Arguments found");
 }
